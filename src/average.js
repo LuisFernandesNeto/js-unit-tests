@@ -12,7 +12,7 @@
 */
 
 const average = (media) => {
-  if (media.length == []) {
+  if (media.length === 0) {
     return undefined;
   }
   let soma = 0;
@@ -27,6 +27,6 @@ const average = (media) => {
   return resultado;
 };
 
-console.log(average([0, 0, 0, 0, 0, 0, 1]));
+console.log(average([1, 2, 3, '4', 5]));
 
 module.exports = average;
