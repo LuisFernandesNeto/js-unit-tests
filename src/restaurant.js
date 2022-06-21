@@ -94,8 +94,7 @@
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
 const createMenu = (menu) => {
-  let fetchMenu = menu;
-  return fetchMenu;
+  const objetoRetornado = createMenu();
 };
 
 /* console.log(createMenu({

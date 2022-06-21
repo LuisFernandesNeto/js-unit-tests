@@ -57,11 +57,11 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     fail('Teste vazio!');
     // TESTE 1: Verifique se função `createMenu()` retorna um objeto que possui a chave `fetchMenu`, a qual tem como valor uma função.
     // ```
-    expect(typeof createMenu.fetchMenu).toBe('function');
     // const objetoRetornado = createMenu(); // Retorno: { fetchMenu: () => {}, ... }
     // ```
-    expect(objetoRetornado.fetchMenu()).toEqual({ food: {}, drink: {} });
+    expect(typeof createMenu.fetchMenu).toBe('function');
     // TESTE 2: Verifique se 'objetoRetornado.fetchMenu()' retorna um objeto cujas chaves são somente `food` e `drink`, 
+    expect(objetoRetornado.fetchMenu()).toEqual({ food: {}, drink: {} });
     // considerando que a função createMenu() foi chamada com o objeto: `{ food: {}, drink: {} }`.
     // ```
     // const objetoRetornado = createMenu({ food: {}, drink: {} });
