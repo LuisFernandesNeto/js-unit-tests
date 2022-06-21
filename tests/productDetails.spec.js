@@ -42,5 +42,8 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof Object.keys(productDetails('Alcool gel', 'Máscara'))).toBe('object');
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
     // Teste se os dois productIds terminam com 123.
+    const resultado = productDetails('Alcool gel', 'Máscara');
+    expect(resultado[0].details.productId).toContain('123');
+    expect(resultado[1].details.productId).toContain('123');
   });
 });
